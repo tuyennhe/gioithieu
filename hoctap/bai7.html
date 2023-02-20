@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 7 ne</title>
+</head>
+<style>
+/* bai 7 ==============================================*/
+        *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: tahoma;
+        }
+        .bai7 ul{
+            margin-top: 50px;
+            display: flex;
+            list-style: none;
+            width: 100%;
+            height: 40px;
+            background-color: #363dfb;
+            flex-direction: row;
+            justify-content: space-around;
+            position: absolute;
+            align-items: center;
+        }
+
+        .bai7 a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        .bai7 li{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bai7 li:hover{
+            background-color: #ff2323;
+
+        }
+        .bai7 .menucon{
+            display: none;
+        }
+        .bai7 li:hover .menucon{
+            position: absolute;
+            background-color: #ff2323;
+            width: 30%;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            margin-top:80px;
+        }
+        .bai7 li:hover .menucon a{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .bai7 li:hover .menucon a:hover{
+            background-color: #c4c4c4;
+        }
+</style>
+<body>
+    <div class="bai7">
+        <div class="main">
+            <ul>
+                <li><a href="">Đây là bài 7</a></li>
+                <li><a href="">Kinh tế</a>
+                    <div class="menucon">
+                        <a href="">Thư viện pháp luật</a>
+                        <a href="">Khoa học</a>
+                        <a href="">Đời sống</a>
+                        
+                    </div>
+                </li>
+                <li><a href="">Thế giới</a>
+                    <div class="menucon">
+                        <a href="">Trung Tuyến</a>
+                        <a href="">Hồng Ngọc</a>
+                    </div></li>
+                <li><a href="">Nhịp sống trẻ</a>
+                    <div class="menucon">
+                        <a href="">Trung Tuyến</a>
+                        <a href="">Hồng Ngọc</a>
+                    </div></li>
+                <li><a href="">Giáo dục</a>
+                    <div class="menucon">
+                        <a href="">Trung Tuyến</a>
+                        <a href="">Hồng Ngọc</a>
+                    </div></li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

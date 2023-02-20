@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 8</title>
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        margin: 50px;
+    }
+    .main >ul{
+        list-style: none;
+        
+    }
+    .main > ul > li{
+        background-color: blue;
+        width: 200px;
+        height: 30px;
+        border-bottom: 1px solid #b8b8b8;
+        display: flex;
+        align-items: center;
+    }
+    .main > ul > li >a{
+        text-decoration: none;
+        display: block;
+        margin-left: 10px;
+        color: #fff;
+    }
+    .main > ul > li:hover{
+        background-color: red;
+    }
+  
+    .main > ul > li:hover .menucon{
+        display: block;
+    }
+    .menucon{
+        position: absolute;
+        background-color: rgb(255, 0, 0);
+        margin-left: 200px;
+        margin-top: 60px;
+        width: 200px;
+        display: none;
+    }
+    .menucon ul{
+        list-style: none;
+    }
+    .menucon li{
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .menucon a{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        margin-left: 10px;
+    }
+    .menucon li:hover{
+        background-color: #b8b8b8;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <ul>
+            <li class="menucha"><a href="">Kinh tế</a>
+                <div class="menucon">
+                    <ul>
+                        <li><a href="">Thư viện pháp luật</a></li>
+                        <li><a href="">Sức khỏe</a></li>
+                        <li><a href="">Đời sống</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Chính trị-xã hội</a></li>
+            <li><a href="">Thế giới</a></li>
+            <li><a href="">Nhịp sống trẻ</a></li>
+            <li><a href="">Giáo dục</a></li>
+        </ul>
+    </div>
+</body>
+</html>

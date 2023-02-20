@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* chia doi man hinh thi bo commment nay */
+            width: 50%;
+            font-size: 18px;
+            font-family: tahoma;
+        }
+        .bai3a{
+            margin: 50px;  
+        }
+        .bai3a .bang3a, .bai3a td{
+            border: 1px solid red;
+            /* bo bot duong ke du thua */
+            border-collapse: collapse;
+        }
+        .bai3a .tieudea{
+            background-color: #FF6600;
+            color: #fff;
+            text-align: center;
+        }
+        .bai3a h2{
+            display: block;
+            color: black;
+            border-bottom: 5px solid black;
+            background-color:#FF9966 ;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+
+        .bai3b{
+            margin: 50px;  
+        }
+        .bai3b .bang3b, .bai3b td{
+            border: 1px solid rgb(0, 21, 255);
+        }
+
+        .bai3b .tieudeb{
+            background-color: #660066;
+            color: #fff;
+            text-align: center;
+            height: 50px;
+            
+        }
+        .bai3 .hihi{
+            width: 200px;
+        }
+        .bai3b h2{
+            display: block;
+            color: black;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .bai3b td:first-child{
+            background-color: #660066;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <!-- bài 3 -->
+     <div class="bai3a">
+        <h2>(style1) Danh sách sinh viên</h2>
+        <table class="bang3a">
+            <tr class="tieudea">
+                <td>STT</td>
+                <td>Mã số sinh viên</td>
+                <td>Họ tên</td>
+                <td>Ngày sinh</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0823000993</td>
+                <td>Nguyễn Văn Trung</td>
+                <td>24/08/2003</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>0983772812</td>
+                <td>Nguyễn Trung Tuyến</td>
+                <td>26/08/2003</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>0982661542</td>
+                <td>Vũ Anh Em</td>
+                <td>01/08/2003</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </table>
+    </div>
+    <div class="bai3b">
+        <h2>(style2)Danh sách sinh viên</h2>
+        <table class="bang3b">
+            <tr class="tieudeb">
+                <td>STT</td>
+                <td>Mã số sinh viên</td>
+                <td class="hihi">Họ tên</td>
+                <td class="hihi">Ngày sinh</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0823000993</td>
+                <td>Nguyễn Văn Trung</td>
+                <td>24/08/2003</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>0983772812</td>
+                <td>Nguyễn Trung Tuyến</td>
+                <td>26/08/2003</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>0982661542</td>
+                <td>Vũ Anh Em</td>
+                <td>01/08/2003</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
