@@ -68,7 +68,7 @@ button{
     height: 30px;
 }
 .tren-phai .img{
-    background-image: url(https://o.rada.vn/data/image/2021/06/07/Mon-an.jpg);
+    animation: 6s slide-menu ease infinite;
     border-radius: 100px 7px;
     width: 100%;
     height: 120%;
@@ -123,12 +123,14 @@ button{
     display: block;
     width: 100%;
     border-radius: 10px;
+    height: 200px;
 }
 .box-con h3{
     margin: 8px 0;
 }
 .box-con p{
     margin-bottom: 20px;
+    min-height: 140px;
 }
 .footer{
     width: 100%;
@@ -205,8 +207,9 @@ button{
 }
 .main-md{
     width: 800px;
-    height: 350px;
-    background-color: #dd812b;
+    min-height: 380px;
+    background-color: #e38e3f;
+    animation: main-md-ps ease 0.6s;
 }
 .header-md{
     text-align: center;
@@ -229,7 +232,67 @@ button{
     font-size: 20px;
     margin: 0 auto;
 }
+.btn {
+    margin: 30px 30px 0 30px;
+    width: 80px;
+    background-color: rgba(255, 0, 0, 0.56);
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
+.main button:hover{
+    background-color: rgb(220, 155, 95);
+    color: black;
+}
 
-#check: ~ .main-md{
-    display: none;
+@keyframes main-md-ps { 
+    0%{
+        opacity: 0;
+        transform: translateY(-160px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slide-menu{
+    0%{
+        background-image: url(https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/0011.%20le-%20mon%20ngon%20cong%20thuc/canh%20lam%20tiet%20canh%20vit/1-cach-lam-tiet-canh-vit.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    33.32%{
+        background-image: url(https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/0011.%20le-%20mon%20ngon%20cong%20thuc/canh%20lam%20tiet%20canh%20vit/1-cach-lam-tiet-canh-vit.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    33.33%{
+        background-image: url(http://cdn.beptruong.edu.vn/wp-content/uploads/2012/10/mam-thit-chuot.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    66.65%{
+        background-image: url(http://cdn.beptruong.edu.vn/wp-content/uploads/2012/10/mam-thit-chuot.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    66.66%{
+        background-image: url(https://images.foody.vn/res/g25/245020/prof/s/foody-mobile-foody-chao-long-hai--594-636014051026334282.jpg);
+
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url(https://images.foody.vn/res/g25/245020/prof/s/foody-mobile-foody-chao-long-hai--594-636014051026334282.jpg);
+    
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
